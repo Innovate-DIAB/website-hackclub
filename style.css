@@ -428,3 +428,98 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 .note-label { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .note-badge { margin-left: 0; }
 .note-main .pin { left: 85%; }
+
+/* ===== EXTERNAL SIGN-UP PAGE ===== */
+.signup-page { background: var(--light); }
+.signup-nav { padding-left: 0; }
+.back-link { color: var(--text); font-weight: 600; text-decoration: none; }
+.back-link:hover { color: var(--red); }
+.signup-main { padding: 56px 0 80px; }
+.signup-wrap {
+    display: grid; grid-template-columns: 1fr 1.5fr; gap: 48px;
+    align-items: start; max-width: 1100px;
+}
+.signup-intro { position: sticky; top: 96px; }
+.signup-intro h1 { font-size: 2.4rem; margin-bottom: 16px; font-weight: 800; }
+.signup-intro > p { margin-bottom: 16px; }
+.signup-meeting {
+    background: var(--white); border-left: 4px solid var(--red);
+    padding: 20px 22px; border-radius: 12px; margin: 24px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+.signup-meeting p { margin-bottom: 6px; }
+.signup-meeting-title { font-size: 1.2rem; font-weight: 800; color: var(--dark); }
+.local-time { color: var(--muted); font-size: 0.9rem; }
+.signup-small { font-size: 0.9rem; color: var(--muted); }
+.signup-small a, .privacy a { color: var(--red); font-weight: 600; }
+
+.signup-form, .signup-done {
+    background: var(--white); border-radius: var(--radius);
+    padding: 36px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+.signup-form fieldset { border: none; padding: 0; margin: 0 0 32px; }
+.signup-form legend {
+    font-size: 1.15rem; font-weight: 800; color: var(--dark);
+    margin-bottom: 16px; padding: 0;
+}
+.field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 18px; flex: 1; min-width: 0; }
+.field-row { display: flex; gap: 18px; }
+.field label { font-weight: 600; color: var(--dark); font-size: 0.95rem; }
+.optional { color: var(--muted); font-weight: 400; }
+.hint { font-size: 0.85rem; color: var(--muted); }
+.signup-form input[type="text"], .signup-form input[type="email"], .signup-form input[type="tel"],
+.signup-form input[type="number"], .signup-form select {
+    font: inherit; font-size: 1rem; color: var(--dark);
+    padding: 12px 14px; border: 1.5px solid #cfd6e0; border-radius: 10px;
+    background: var(--white); width: 100%;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.signup-form input:focus, .signup-form select:focus {
+    outline: none; border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(212, 37, 63, 0.15);
+}
+.signup-form input.invalid, .signup-form select.invalid { border-color: var(--red); background: #fff6f7; }
+.checks { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 12px 0 18px; }
+.check {
+    display: flex; align-items: center; gap: 10px;
+    padding: 12px 14px; border: 1.5px solid #e2e7ee; border-radius: 10px;
+    cursor: pointer; font-weight: 500; color: var(--dark);
+}
+.check:has(input:checked) { border-color: var(--red); background: #fff6f7; }
+.check input { width: 18px; height: 18px; accent-color: var(--red); flex-shrink: 0; }
+.consent { align-items: flex-start; font-weight: 500; line-height: 1.5; }
+.consent input { margin-top: 3px; }
+.consent:has(input.invalid) { border-color: var(--red); background: #fff6f7; }
+.privacy { font-size: 0.85rem; color: var(--muted); margin: 12px 0 20px; }
+.error-text { color: var(--red); font-weight: 600; margin: 4px 0 12px; }
+.signup-submit { width: 100%; font-size: 1.05rem; }
+.signup-submit:disabled { opacity: 0.6; cursor: wait; transform: none; }
+.trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.signup-done { text-align: center; grid-column: 2; }
+.signup-done h2 { margin-bottom: 12px; }
+.signup-done p { margin-bottom: 24px; }
+.signup-done:focus { outline: none; }
+
+/* Join section: two sign-up choices */
+.signup-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 720px; margin: 0 auto 32px; }
+.signup-choice {
+    background: rgba(255, 255, 255, 0.12); border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: var(--radius); padding: 24px; text-align: center;
+}
+.join .signup-choice h3 { color: var(--white); margin-bottom: 6px; }
+.join .signup-choice p { font-size: 0.95rem; margin-bottom: 16px; }
+.join-contact { justify-content: center; }
+
+@media (max-width: 900px) {
+    .signup-wrap { grid-template-columns: 1fr; gap: 28px; }
+    .signup-intro { position: static; }
+    .signup-done { grid-column: 1; }
+}
+@media (max-width: 560px) {
+    .field-row { flex-direction: column; gap: 0; }
+    .checks { grid-template-columns: 1fr; }
+    .signup-form, .signup-done { padding: 24px 18px; }
+    .signup-intro h1 { font-size: 1.9rem; }
+    .signup-choices { grid-template-columns: 1fr; }
+}
+.note-ext { background: #fff9c4; transform: rotate(-1deg); }

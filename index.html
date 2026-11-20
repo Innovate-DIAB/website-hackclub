@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
@@ -40,7 +40,7 @@
         <a href="#team">Team</a>
         <a href="#gallery">Gallery</a>
         <a href="#faq">FAQ</a>
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-small">Sign Up</a>
+        <a href="#join" class="btn btn-small">Sign Up</a>
       </nav>
     </div>
   </header>
@@ -60,7 +60,7 @@
         We code, design and ship real projects together, and win prizes from Hack Club along the way.
       </p>
       <div class="hero-buttons">
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn">Join the Club</a>
+        <a href="#join" class="btn">Join the Club</a>
         <a href="#meetings" class="btn btn-outline">Next Meeting</a>
       </div>
     </div>
@@ -122,24 +122,27 @@
       <div class="board fade-in">
         <div class="note note-main">
           <span class="pin"></span>
-          <p class="note-label">First Meeting <span class="note-badge" id="meetingBadge" data-date="2026-11-25"></span></p>
+          <p class="note-label">DIAB Students <span class="note-badge" data-date="2026-11-25"></span></p>
           <h3>Onboarding Meeting</h3>
           <p class="note-date">Wednesday, 25 November 2026</p>
           <p class="note-time">Lunchtime</p>
           <p>Meet the team, find out how the club works, and pick your first project. Bring a laptop if you have one!</p>
-          <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-small">Sign up to come</a>
+          <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-small">DIAB sign-up</a>
         </div>
-        <div class="note note-soon">
+        <div class="note note-ext">
           <span class="pin"></span>
-          <p class="note-label">Up Next</p>
-          <h3>Coming Soon</h3>
-          <p>More meetings will be pinned here after onboarding. Stay tuned!</p>
+          <p class="note-label">External Members <span class="note-badge" data-date="2026-11-26"></span></p>
+          <h3>Onboarding Meeting</h3>
+          <p class="note-date">Thursday, 26 November 2026</p>
+          <p class="note-time">6:00 PM GST (GMT+4), online</p>
+          <p>For students from other schools. We'll email you the joining link after you sign up.</p>
+          <a href="signup.html" class="btn btn-small">External sign-up</a>
         </div>
         <div class="note note-soon note-tilt">
           <span class="pin"></span>
-          <p class="note-label">Later</p>
+          <p class="note-label">Up Next</p>
           <h3>Coming Soon</h3>
-          <p>Workshops, build nights and hackathons are on the way.</p>
+          <p>Workshops, build nights and hackathons will be pinned here after onboarding.</p>
         </div>
       </div>
     </div>
@@ -256,7 +259,11 @@
       </details>
       <details class="faq-item">
         <summary>When is the first meeting?</summary>
-        <p>Our onboarding meeting is at lunchtime on Wednesday, 25 November 2026. Check the bulletin board above for more meetings.</p>
+        <p>DIAB students: lunchtime on Wednesday, 25 November 2026. External members: online on Thursday, 26 November 2026 at 6:00 PM GST (GMT+4). Check the bulletin board above for more meetings.</p>
+      </details>
+      <details class="faq-item">
+        <summary>I'm not at DIAB. Can I still join?</summary>
+        <p>Yes! Students from any school can join as external members. External members meet online. Use the External Sign Up button below.</p>
       </details>
       <details class="faq-item">
         <summary>Does it cost anything?</summary>
@@ -268,7 +275,7 @@
       </details>
       <details class="faq-item">
         <summary>How do I join?</summary>
-        <p>Fill in our sign-up form using the button below. You can also talk to us at school or send us an email.</p>
+        <p>DIAB students use the DIAB sign-up form. Students from other schools use the External Sign Up form. Both buttons are just below. You can also email us.</p>
       </details>
     </div>
   </section>
@@ -277,9 +284,20 @@
   <section class="section join" id="join">
     <div class="container join-inner fade-in">
       <h2>Ready to start building?</h2>
-      <p>Sign up in less than a minute. We'd love to have you.</p>
-      <div class="hero-buttons">
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-white">Sign Up Now</a>
+      <p>Pick the sign-up that fits you. We'd love to have you.</p>
+      <div class="signup-choices">
+        <div class="signup-choice">
+          <h3>At DIAB?</h3>
+          <p>For students at Dubai International Academy Al Barsha.</p>
+          <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-white">Sign Up Now</a>
+        </div>
+        <div class="signup-choice">
+          <h3>From another school?</h3>
+          <p>For external members. We meet online.</p>
+          <a href="signup.html" class="btn btn-white">Sign Up Now (External)</a>
+        </div>
+      </div>
+      <div class="hero-buttons join-contact">
         <a href="mailto:diab210111@diabstudents.com,Diab250213@diabstudents.com" class="btn btn-ghost">Email Us</a>
         <button class="btn btn-ghost" id="copyBtn">Copy email addresses</button>
       </div>
@@ -306,6 +324,6 @@
   <!-- Little pop-up message -->
   <div class="toast" id="toast" role="status" aria-live="polite">Emails copied!</div>
 
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>

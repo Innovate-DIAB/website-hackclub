@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>External Sign Up | DIAB Innovate</title>
+  <link rel="icon" href="logo.png">
+  <meta name="description" content="Not a DIAB student? Sign up to join DIAB Innovate, a Hack Club at Dubai International Academy Al Barsha, as an external member.">
+  <meta name="theme-color" content="#d4253f">
+  <meta property="og:title" content="Join DIAB Innovate as an external member">
+  <meta property="og:description" content="Students from any school can join our Hack Club online. Sign up in a few minutes.">
+  <meta property="og:image" content="https://innovate-diab.github.io/website-hackclub/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=8">
+</head>
+<body class="signup-page">
+
+  <header class="nav scrolled">
+    <div class="container nav-inner signup-nav">
+      <a href="index.html" class="brand">DIAB <strong>Innovate</strong></a>
+      <a href="index.html" class="back-link">Back to the main site</a>
+    </div>
+  </header>
+
+  <main class="section signup-main">
+    <div class="container signup-wrap">
+
+      <div class="signup-intro">
+        <p class="section-label">External Members</p>
+        <h1>Join DIAB Innovate from any school</h1>
+        <p>Not a student at Dubai International Academy Al Barsha? You can still join our Hack Club. External members meet online.</p>
+        <div class="signup-meeting">
+          <p class="note-label">First meeting</p>
+          <p class="signup-meeting-title">External Members Onboarding</p>
+          <p><strong>Thursday, 26 November 2026, 6:00 PM GST (GMT+4)</strong></p>
+          <p class="local-time" id="localTime"></p>
+          <p>Online. We'll email you the joining link after you sign up.</p>
+        </div>
+        <p class="signup-small">At DIAB? Use the <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener">DIAB student sign-up form</a> instead.</p>
+      </div>
+
+      <form class="signup-form" id="signupForm" novalidate>
+
+        <fieldset>
+          <legend>About you</legend>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Your email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="hint">We send the meeting link here.</span>
+            </div>
+            <div class="field">
+              <label for="phone">Contact number</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+971 50 123 4567" required>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="age">Age</label>
+              <input id="age" name="age" type="number" min="8" max="19" inputmode="numeric" required>
+            </div>
+            <div class="field">
+              <label for="grade">Year / Grade</label>
+              <select id="grade" name="grade" required>
+                <option value="">Choose one</option>
+                <option>Year 5 / Grade 4</option>
+                <option>Year 6 / Grade 5</option>
+                <option>Year 7 / Grade 6</option>
+                <option>Year 8 / Grade 7</option>
+                <option>Year 9 / Grade 8</option>
+                <option>Year 10 / Grade 9</option>
+                <option>Year 11 / Grade 10</option>
+                <option>Year 12 / Grade 11</option>
+                <option>Year 13 / Grade 12</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="school">School</label>
+            <input id="school" name="school" type="text" autocomplete="organization" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>What are you most interested in?</legend>
+          <p class="hint">Pick as many as you like.</p>
+          <div class="checks" id="interests">
+            <label class="check"><input type="checkbox" name="interests" value="CAD design"> CAD design</label>
+            <label class="check"><input type="checkbox" name="interests" value="Coding"> Coding</label>
+            <label class="check"><input type="checkbox" name="interests" value="Design"> Design</label>
+            <label class="check"><input type="checkbox" name="interests" value="AI"> AI</label>
+            <label class="check"><input type="checkbox" name="interests" value="Game development"> Game development</label>
+            <label class="check"><input type="checkbox" name="interests" value="Hackathons"> Hackathons</label>
+            <label class="check"><input type="checkbox" name="interests" value="Event opportunities"> Event opportunities</label>
+            <label class="check"><input type="checkbox" name="interests" value="Raffles and prizes"> Raffles and prizes</label>
+          </div>
+          <div class="field">
+            <label for="interestOther">Anything else? <span class="optional">(optional)</span></label>
+            <input id="interestOther" name="interest_other" type="text">
+          </div>
+          <p class="error-text" id="interestsError" hidden>Pick at least one.</p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Parent or guardian</legend>
+          <div class="field">
+            <label for="parentName">Parent/guardian name</label>
+            <input id="parentName" name="parent_name" type="text" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="parentEmail">Parent/guardian email</label>
+              <input id="parentEmail" name="parent_email" type="email" required>
+            </div>
+            <div class="field">
+              <label for="parentPhone">Preferred phone number</label>
+              <input id="parentPhone" name="parent_phone" type="tel" placeholder="+971 50 123 4567" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Where you are</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="country">Country</label>
+              <input id="country" name="country" type="text" autocomplete="country-name" required>
+            </div>
+            <div class="field">
+              <label for="timezone">Time zone</label>
+              <select id="timezone" name="timezone" required></select>
+              <span class="hint">We filled this in from your device. Change it if it's wrong.</span>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Spam trap: people never see this box, bots fill it in -->
+        <div class="trap" aria-hidden="true">
+          <label for="website">Leave this empty</label>
+          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <label class="check consent">
+          <input type="checkbox" name="consent" value="Yes" required>
+          <span>My parent or guardian knows I'm signing up and agrees to be contacted by DIAB Innovate about club meetings and events.</span>
+        </label>
+        <p class="privacy">We only use these details to run the club and contact you and your parent or guardian about it. We never share them or sell them.</p>
+
+        <p class="error-text" id="formError" role="alert" hidden></p>
+        <button type="submit" class="btn signup-submit" id="submitBtn">Sign Up</button>
+      </form>
+
+      <div class="signup-done" id="signupDone" hidden tabindex="-1">
+        <h2>You're signed up!</h2>
+        <p>Thanks for joining DIAB Innovate. We'll email the joining link for the External Members Onboarding (Thursday, 26 November 2026, 6:00 PM GST) to the address you gave us.</p>
+        <a href="index.html" class="btn">Back to the main site</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>DIAB Innovate · Dubai International Academy Al Barsha</p>
+      <a href="https://hackclub.com" target="_blank" rel="noopener" class="footer-hc">
+        <img src="https://assets.hackclub.com/icon-rounded.svg" alt="Hack Club logo">
+        Proud member of Hack Club
+      </a>
+    </div>
+  </footer>
+
+  <script src="signup.js?v=2"></script>
+</body>
+</html>

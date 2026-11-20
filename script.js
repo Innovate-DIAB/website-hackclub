@@ -134,8 +134,7 @@ document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
 // ===== MEETING COUNTDOWN ON THE BULLETIN BOARD =====
 // Change data-date="YYYY-MM-DD" in index.html and this updates by itself.
-const badge = document.getElementById("meetingBadge");
-if (badge) {
+document.querySelectorAll(".note-badge[data-date]").forEach((badge) => {
     const [y, m, d] = badge.dataset.date.split("-").map(Number);
     const meeting = new Date(y, m - 1, d);
     const today = new Date();
@@ -149,7 +148,7 @@ if (badge) {
         badge.textContent = "Done";
         badge.classList.add("past");
     }
-}
+});
 
 // ===== COPY EMAIL BUTTON =====
 const copyBtn = document.getElementById("copyBtn");
