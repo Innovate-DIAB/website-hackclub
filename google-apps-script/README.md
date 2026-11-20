@@ -9,8 +9,9 @@ club Google account (innovateatdiab@gmail.com).
 Open the Google Sheet **DIAB Innovate External Sign-ups** (in that account's Google Drive),
 tab **Sign-ups**. Each row is one person, newest at the bottom.
 
-- **Get an email for every new sign-up:** in the Sheet, Tools > Notification settings >
-  Edit notifications > "Any changes are made" > "Email - right away".
+- **Email alerts:** the script emails innovateatdiab@gmail.com with the person's details
+  every time someone signs up (subject: "New external sign-up: <name>").
+  To forward these to another inbox, set up a Gmail filter on that subject.
 - **Download it:** File > Download > Microsoft Excel (.xlsx) or CSV.
 - **Share it with another organiser:** Share button (top right), add their email.
   Only people you share it with can see it. It holds students' and parents' contact
