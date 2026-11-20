@@ -235,6 +235,72 @@ h2 { font-size: 2.2rem; margin-bottom: 1rem; }
 }
 .toast.show { transform: translate(-50%, 0); }
 
+/* ===== HERO LOGO FRAME ===== */
+.hero-logo { width: 240px; border-radius: 28px; box-shadow: 0 12px 40px rgba(23, 23, 29, 0.15); }
+
+/* Small line of text under a heading */
+.section-sub { color: var(--muted); max-width: 620px; margin: 0 auto; font-size: 1.05rem; }
+
+/* ===== MEETINGS BULLETIN BOARD ===== */
+.board {
+    display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 28px;
+    margin-top: 48px; padding: 40px;
+    background: #c99a62;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+    background-size: 8px 8px;
+    border: 12px solid #7a5230;
+    border-radius: var(--radius);
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.25), 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.note {
+    position: relative;
+    background: #fff9c4;
+    padding: 32px 24px 24px;
+    border-radius: 4px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: rotate(-1.5deg);
+    transition: transform 0.2s;
+}
+.note:hover { transform: rotate(0) scale(1.03); }
+.note-main { background: var(--white); transform: rotate(1deg); }
+.note-tilt { transform: rotate(2deg); background: #d6f0ff; }
+.note h3 { margin: 6px 0 8px; }
+.note p { margin-bottom: 12px; }
+.note-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+.note-date { color: var(--red); font-weight: 800; font-size: 1.15rem; }
+.note-soon h3 { color: var(--muted); }
+.pin {
+    position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+    width: 18px; height: 18px; border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #ff7a8a, var(--red) 60%, #a01828);
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== PRIZES ===== */
+.prize { text-align: center; }
+.prize .card-icon { font-size: 2.6rem; }
+
+/* ===== TEAM CHIPS ===== */
+.member { width: 340px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 16px; }
+.chips span {
+    background: rgba(236, 55, 80, 0.1); color: var(--red);
+    padding: 4px 12px; border-radius: 999px;
+    font-size: 0.8rem; font-weight: 600;
+}
+
+/* ===== GALLERY ===== */
+.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 48px; }
+.photo-slot, .photo { aspect-ratio: 4 / 3; border-radius: var(--radius); width: 100%; }
+.photo { object-fit: cover; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); }
+.photo-slot {
+    border: 3px dashed #d3dce6;
+    background: var(--light);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    color: var(--muted); font-weight: 600;
+}
+.photo-slot span { font-size: 2.5rem; margin-bottom: 8px; }
+
 /* ===== FADE-IN ON SCROLL ===== */
 .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s, transform 0.6s; }
 .fade-in.visible { opacity: 1; transform: none; }
@@ -251,6 +317,8 @@ h2 { font-size: 2.2rem; margin-bottom: 1rem; }
           .hero h1 { font-size: 2.4rem; }
             .about-grid { grid-template-columns: 1fr; }
               .cards { grid-template-columns: 1fr; }
+    .board { grid-template-columns: 1fr; padding: 24px; }
+    .gallery { grid-template-columns: 1fr; }
                 .steps { grid-template-columns: 1fr 1fr; }
                   .quote { font-size: 1.3rem; }
                     .hc-flag img { width: 80px; }
