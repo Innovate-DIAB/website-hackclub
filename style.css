@@ -378,3 +378,5 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
     .fade-in { opacity: 1; transform: none; transition: none; }
     .card, .member, .note, .btn { transition: none; }
 }
+
+.note-time { font-weight: 700; color: var(--dark); margin-top: -6px; }
