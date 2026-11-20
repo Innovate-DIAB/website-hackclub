@@ -526,3 +526,9 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
     .signup-choices { grid-template-columns: 1fr; }
 }
 .note-ext { background: #fff9c4; transform: rotate(-1deg); }
+
+/* Projects started callout */
+.projects-started { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  margin-top: 40px; padding: 24px 28px; border: 2px solid var(--red); border-radius: 16px; background: var(--white); }
+.projects-started h3 { margin: 0 0 6px; }
+.projects-started p { margin: 0; max-width: 620px; }
