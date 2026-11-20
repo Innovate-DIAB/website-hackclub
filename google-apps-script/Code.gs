@@ -38,12 +38,48 @@ function doPost(e) {
       clean(p.country), clean(p.timezone), p.consent ? "Yes" : "No"
     ]);
 
+    // Email the club account about it. If the email fails, the sign-up is still saved.
+    try {
+      notify(p, interests);
+    } catch (mailErr) {
+      console.error(mailErr);
+    }
+
     return reply({ ok: true });
   } catch (err) {
     return reply({ ok: false, error: String(err) });
   } finally {
     lock.releaseLock();
   }
+}
+
+// Sends a plain-text summary of the new sign-up to the club account
+function notify(p, interests) {
+  const v = (x) => String(x || "-").slice(0, 300);
+  MailApp.sendEmail({
+    to: Session.getEffectiveUser().getEmail(),
+    subject: "New external sign-up: " + v(p.name),
+    body: [
+      "Someone just signed up as an external member of DIAB Innovate.",
+      "",
+      "Name: " + v(p.name),
+      "Email: " + v(p.email),
+      "Contact number: " + v(p.phone),
+      "Age: " + v(p.age),
+      "School: " + v(p.school),
+      "Year / Grade: " + v(p.grade),
+      "Interests: " + v(interests) + (p.interest_other ? " (also: " + v(p.interest_other) + ")" : ""),
+      "",
+      "Parent/guardian: " + v(p.parent_name),
+      "Parent email: " + v(p.parent_email),
+      "Parent phone: " + v(p.parent_phone),
+      "",
+      "Country: " + v(p.country),
+      "Time zone: " + v(p.timezone),
+      "",
+      "All sign-ups: https://docs.google.com/spreadsheets/d/" + SHEET_ID + "/edit"
+    ].join("\n")
+  });
 }
 
 // Visiting the web app link in a browser just shows that it's working

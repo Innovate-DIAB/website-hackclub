@@ -10,8 +10,8 @@ const interestsError = document.getElementById("interestsError");
 const done = document.getElementById("signupDone");
 
 // ===== MEETING TIME IN THE VISITOR'S OWN TIME ZONE =====
-// 6:00 PM in Dubai (GMT+4) on 26 Nov 2026 is 14:00 UTC.
-const meeting = new Date(Date.UTC(2026, 10, 26, 14, 0));
+// 4:00 PM in Dubai (GMT+4) on 27 Nov 2026 is 12:00 UTC.
+const meeting = new Date(Date.UTC(2026, 10, 27, 12, 0));
 const myZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
 if (myZone && myZone !== "Asia/Dubai" && myZone !== "Asia/Muscat") {
     const local = meeting.toLocaleString(undefined, {
