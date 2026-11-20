@@ -154,7 +154,7 @@ if (badge) {
 // ===== COPY EMAIL BUTTON =====
 const copyBtn = document.getElementById("copyBtn");
 const toast = document.getElementById("toast");
-const email = "diab210111@diabstudents.com";
+const email = "diab210111@diabstudents.com, Diab250213@diabstudents.com";
 
 function showToast(message) {
     toast.textContent = message;
@@ -165,9 +165,9 @@ function showToast(message) {
 copyBtn.addEventListener("click", async () => {
     try {
         await navigator.clipboard.writeText(email);
-        showToast("Email copied!");
+        showToast("Emails copied!");
     } catch {
-        showToast("Couldn't copy. The email is " + email);
+        showToast("Couldn't copy. Our emails are " + email);
     }
 });
 
