@@ -14,7 +14,7 @@
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=6">
 </head>
 <body>
 
@@ -69,12 +69,12 @@
   <!-- SCROLLING BANNER -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>HTML</span><span>✦</span><span>CSS</span><span>✦</span><span>JavaScript</span><span>✦</span>
-      <span>Python</span><span>✦</span><span>Game Dev</span><span>✦</span><span>CAD</span><span>✦</span>
-      <span>3D Printing</span><span>✦</span><span>Apps</span><span>✦</span><span>AI</span><span>✦</span>
-      <span>HTML</span><span>✦</span><span>CSS</span><span>✦</span><span>JavaScript</span><span>✦</span>
-      <span>Python</span><span>✦</span><span>Game Dev</span><span>✦</span><span>CAD</span><span>✦</span>
-      <span>3D Printing</span><span>✦</span><span>Apps</span><span>✦</span><span>AI</span><span>✦</span>
+      <span>HTML</span><span class="dot"></span><span>CSS</span><span class="dot"></span><span>JavaScript</span><span class="dot"></span>
+      <span>Python</span><span class="dot"></span><span>Game Dev</span><span class="dot"></span><span>CAD</span><span class="dot"></span>
+      <span>3D Printing</span><span class="dot"></span><span>Apps</span><span class="dot"></span><span>AI</span><span class="dot"></span>
+      <span>HTML</span><span class="dot"></span><span>CSS</span><span class="dot"></span><span>JavaScript</span><span class="dot"></span>
+      <span>Python</span><span class="dot"></span><span>Game Dev</span><span class="dot"></span><span>CAD</span><span class="dot"></span>
+      <span>3D Printing</span><span class="dot"></span><span>Apps</span><span class="dot"></span><span>AI</span><span class="dot"></span>
     </div>
   </div>
 
@@ -101,13 +101,14 @@
     <div class="container">
       <p class="section-label center">What We Do</p>
       <h2 class="center">If you can imagine it, we can build it.</h2>
+      <p class="center section-sub">Photos from Hack Club clubs and events around the world.</p>
       <div class="cards">
-        <div class="card fade-in"><div class="card-icon">📱</div><h3>Apps</h3><p>Make mobile and web apps that solve real problems for students and the community.</p></div>
-        <div class="card fade-in"><div class="card-icon">🎮</div><h3>Games</h3><p>Design and code our own games, from simple browser games to full 3D worlds.</p></div>
-        <div class="card fade-in"><div class="card-icon">🌐</div><h3>Websites</h3><p>Learn HTML, CSS and JavaScript, then build and publish our own websites (like this one).</p></div>
-        <div class="card fade-in"><div class="card-icon">🤖</div><h3>AI</h3><p>Experiment with AI and build smart tools, chatbots and projects that think for themselves.</p></div>
-        <div class="card fade-in"><div class="card-icon">🛠️</div><h3>CAD &amp; 3D Design</h3><p>Model parts, gadgets and inventions in CAD, ready to 3D print or build.</p></div>
-        <div class="card fade-in"><div class="card-icon">🤝</div><h3>Build Together</h3><p>Team up, help each other out, and learn from people who have done it before.</p></div>
+        <div class="card photo-card fade-in"><img src="images/apps.jpg" alt="Students coding together on laptops" class="card-photo" loading="lazy"><h3>Apps</h3><p>Make mobile and web apps that solve real problems for students and the community.</p></div>
+        <div class="card photo-card fade-in"><img src="images/games.jpg" alt="A student drawing game art on a laptop" class="card-photo" loading="lazy"><h3>Games</h3><p>Design and code our own games, from simple browser games to full 3D worlds.</p></div>
+        <div class="card photo-card fade-in"><img src="images/websites.jpg" alt="Two students building on computers" class="card-photo" loading="lazy"><h3>Websites</h3><p>Learn HTML, CSS and JavaScript, then build and publish our own websites (like this one).</p></div>
+        <div class="card photo-card fade-in"><img src="images/ai.jpg" alt="A team of students working on laptops" class="card-photo" loading="lazy"><h3>AI</h3><p>Experiment with AI and build smart tools, chatbots and projects that think for themselves.</p></div>
+        <div class="card photo-card fade-in"><img src="images/hardware.jpg" alt="Students testing a small gadget they built" class="card-photo" loading="lazy"><h3>CAD &amp; 3D Design</h3><p>Model parts, gadgets and inventions in CAD, ready to 3D print or build.</p></div>
+        <div class="card photo-card fade-in"><img src="images/together.jpg" alt="A group of Hack Clubbers in matching hoodies" class="card-photo" loading="lazy"><h3>Build Together</h3><p>Team up, help each other out, and learn from people who have done it before.</p></div>
       </div>
     </div>
   </section>
@@ -121,22 +122,22 @@
       <div class="board fade-in">
         <div class="note note-main">
           <span class="pin"></span>
-          <p class="note-label">📌 First Meeting <span class="note-badge" id="meetingBadge" data-date="2026-11-25"></span></p>
+          <p class="note-label">First Meeting <span class="note-badge" id="meetingBadge" data-date="2026-11-25"></span></p>
           <h3>Onboarding Meeting</h3>
           <p class="note-date">Wednesday, 25 November 2026</p>
-          <p class="note-time">🕐 Lunchtime</p>
+          <p class="note-time">Lunchtime</p>
           <p>Meet the team, find out how the club works, and pick your first project. Bring a laptop if you have one!</p>
           <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-small">Sign up to come</a>
         </div>
         <div class="note note-soon">
           <span class="pin"></span>
-          <p class="note-label">🗓️ Up Next</p>
+          <p class="note-label">Up Next</p>
           <h3>Coming Soon</h3>
           <p>More meetings will be pinned here after onboarding. Stay tuned!</p>
         </div>
         <div class="note note-soon note-tilt">
           <span class="pin"></span>
-          <p class="note-label">🗓️ Later</p>
+          <p class="note-label">Later</p>
           <h3>Coming Soon</h3>
           <p>Workshops, build nights and hackathons are on the way.</p>
         </div>
@@ -164,13 +165,17 @@
       <p class="section-label center">Prizes</p>
       <h2 class="center">Build cool stuff. Get rewarded.</h2>
       <p class="center section-sub">Hack Club runs programs where you build a project, ship it, and earn prizes for it. Here's what you can work towards.</p>
+      <figure class="banner-photo fade-in">
+        <img src="images/hackathon-crowd.jpg" alt="Hundreds of students at a Hack Club hackathon" loading="lazy">
+        <figcaption>Students at a Hack Club hackathon. Photo: Hack Club</figcaption>
+      </figure>
       <div class="cards">
-        <div class="card prize fade-in"><div class="card-icon">🏆</div><h3>Ship &amp; Earn</h3><p>Finish a project for a Hack Club program and get rewarded. Every program has its own prizes.</p></div>
-        <div class="card prize fade-in"><div class="card-icon">🔌</div><h3>Hardware &amp; Gear</h3><p>Programs have offered things like electronics kits, tools and tech to help you build even more.</p></div>
-        <div class="card prize fade-in"><div class="card-icon">✨</div><h3>Stickers &amp; Swag</h3><p>Hack Club stickers and swag to show off what you've made.</p></div>
-        <div class="card prize fade-in"><div class="card-icon">⚡</div><h3>Club Challenges</h3><p>Win our own mini-competitions and hackathons at club meetings.</p></div>
-        <div class="card prize fade-in"><div class="card-icon">🌍</div><h3>Real Experience</h3><p>Projects you can show off in portfolios, competitions and applications.</p></div>
-        <div class="card prize fade-in"><div class="card-icon">🎁</div><h3>More to Come</h3><p>We'll announce the current prizes at meetings, so make sure you come along!</p></div>
+        <div class="card prize fade-in"><span class="prize-num">01</span><h3>Ship &amp; Earn</h3><p>Finish a project for a Hack Club program and get rewarded. Every program has its own prizes.</p></div>
+        <div class="card prize fade-in"><span class="prize-num">02</span><h3>Hardware &amp; Gear</h3><p>Programs have offered things like electronics kits, tools and tech to help you build even more.</p></div>
+        <div class="card prize fade-in"><span class="prize-num">03</span><h3>Stickers &amp; Swag</h3><p>Hack Club stickers and swag to show off what you've made.</p></div>
+        <div class="card prize fade-in"><span class="prize-num">04</span><h3>Club Challenges</h3><p>Win our own mini-competitions and hackathons at club meetings.</p></div>
+        <div class="card prize fade-in"><span class="prize-num">05</span><h3>Real Experience</h3><p>Projects you can show off in portfolios, competitions and applications.</p></div>
+        <div class="card prize fade-in"><span class="prize-num">06</span><h3>More to Come</h3><p>We'll announce the current prizes at meetings, so make sure you come along!</p></div>
       </div>
     </div>
   </section>
@@ -218,9 +223,15 @@
       <h2 class="center">Moments from our meetings</h2>
       <p class="center section-sub">Photos coming soon, right after our first meeting!</p>
       <div class="gallery fade-in">
-        <div class="photo-slot"><span>📸</span><p>Onboarding meeting</p></div>
-        <div class="photo-slot"><span>💻</span><p>Build nights</p></div>
-        <div class="photo-slot"><span>🏆</span><p>Hackathons</p></div>
+        <div class="photo-slot"><p>Onboarding meeting</p><span>Photos coming soon</span></div>
+        <div class="photo-slot"><p>Build nights</p><span>Photos coming soon</span></div>
+        <div class="photo-slot"><p>Hackathons</p><span>Photos coming soon</span></div>
+      </div>
+      <h3 class="community-title">Until then, here's the Hack Club community</h3>
+      <div class="gallery fade-in">
+        <figure class="community-photo"><img src="images/hack-night.jpg" alt="Students coding at a Hack Club hack night" class="photo" loading="lazy"><figcaption>A hack night</figcaption></figure>
+        <figure class="community-photo"><img src="images/campfire.jpg" alt="Hack Clubbers around a campfire at night" class="photo" loading="lazy"><figcaption>Campfire after a hackathon</figcaption></figure>
+        <figure class="community-photo"><img src="images/club-trip.jpg" alt="A big group of Hack Clubbers on a hilltop" class="photo" loading="lazy"><figcaption>A Hack Club trip</figcaption></figure>
       </div>
     </div>
   </section>
@@ -268,8 +279,8 @@
       <h2>Ready to start building?</h2>
       <p>Sign up in less than a minute. We'd love to have you.</p>
       <div class="hero-buttons">
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-white">📝 Sign Up Now</a>
-        <a href="mailto:diab210111@diabstudents.com,Diab250213@diabstudents.com" class="btn btn-ghost">📧 Email Us</a>
+        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-white">Sign Up Now</a>
+        <a href="mailto:diab210111@diabstudents.com,Diab250213@diabstudents.com" class="btn btn-ghost">Email Us</a>
         <button class="btn btn-ghost" id="copyBtn">Copy email addresses</button>
       </div>
       <p class="email-text">diab210111@diabstudents.com<br>Diab250213@diabstudents.com</p>
@@ -295,6 +306,6 @@
   <!-- Little pop-up message -->
   <div class="toast" id="toast" role="status" aria-live="polite">Emails copied!</div>
 
-  <script src="script.js?v=3"></script>
+  <script src="script.js?v=4"></script>
 </body>
 </html>

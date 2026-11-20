@@ -380,3 +380,51 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 
 .note-time { font-weight: 700; color: var(--dark); margin-top: -6px; }
+
+/* ===== PHOTO CARDS (What We Do) ===== */
+.card { overflow: hidden; }
+.photo-card { padding: 0 0 28px; }
+.photo-card h3, .photo-card p { padding: 0 28px; }
+.card-photo {
+    display: block; width: 100%;
+    aspect-ratio: 4 / 3; object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.4s;
+}
+.photo-card:hover .card-photo { transform: scale(1.04); }
+
+/* ===== PRIZES: numbers instead of icons ===== */
+.prize { text-align: left; }
+.prize-num {
+    display: block; margin-bottom: 14px;
+    font-size: 0.85rem; font-weight: 800; letter-spacing: 1px;
+    color: var(--red);
+}
+.banner-photo { margin: 40px 0 0; }
+.banner-photo img {
+    display: block; width: 100%;
+    aspect-ratio: 21 / 8; object-fit: cover;
+    border-radius: var(--radius);
+}
+.banner-photo figcaption, .community-photo figcaption {
+    margin-top: 10px; font-size: 0.85rem; color: var(--muted);
+}
+
+/* ===== MARQUEE DOTS ===== */
+.marquee-track span.dot {
+    width: 8px; height: 8px; padding: 0; margin: auto 32px auto 0;
+    border-radius: 50%; background: var(--red-bright);
+}
+
+/* ===== GALLERY ===== */
+.photo-slot { gap: 6px; padding: 16px; text-align: center; }
+.photo-slot p { color: var(--dark); font-weight: 700; }
+.photo-slot span { font-size: 0.85rem; font-weight: 500; margin: 0; }
+.community-title { text-align: center; margin-top: 64px; font-size: 1.3rem; }
+.community-photo { margin: 0; }
+.gallery + .community-title + .gallery { margin-top: 24px; }
+
+/* ===== NOTES without emoji ===== */
+.note-label { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.note-badge { margin-left: 0; }
+.note-main .pin { left: 85%; }

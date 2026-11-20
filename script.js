@@ -146,7 +146,7 @@ if (badge) {
     else if (days === 1) badge.textContent = "Tomorrow!";
     else if (days === 0) badge.textContent = "Today!";
     else {
-        badge.textContent = "Done ✓";
+        badge.textContent = "Done";
         badge.classList.add("past");
     }
 }
