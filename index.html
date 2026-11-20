@@ -4,17 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DIAB Innovate | A Hack Club</title>
+  <meta name="description" content="DIAB Innovate is the Hack Club at Dubai International Academy Al Barsha. We build apps, games, websites, AI and CAD projects together and win Hack Club prizes. Free to join, no experience needed.">
+  <meta name="theme-color" content="#d4253f">
+  <meta property="og:title" content="DIAB Innovate | A Hack Club">
+  <meta property="og:description" content="Students who build, not just learn. Join the Hack Club at Dubai International Academy Al Barsha.">
+  <meta property="og:image" content="https://saigamer007pro.github.io/website-hackclub/logo.png">
+  <meta property="og:url" content="https://saigamer007pro.github.io/website-hackclub/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
+
+  <a href="#about" class="skip-link">Skip to content</a>
 
   <!-- Scroll progress bar -->
   <div class="progress" id="progress"></div>
 
   <!-- Hack Club flag -->
-  <a class="hc-flag" href="https://hackclub.com" target="_blank">
+  <a class="hc-flag" href="https://hackclub.com" target="_blank" rel="noopener">
     <img src="https://assets.hackclub.com/flag-orpheus-top.svg" alt="Hack Club">
   </a>
 
@@ -22,7 +32,7 @@
   <header class="nav" id="nav">
     <div class="container nav-inner">
       <a href="#home" class="brand">DIAB <strong>Innovate</strong></a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
       <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#meetings">Meetings</a>
@@ -30,32 +40,34 @@
         <a href="#team">Team</a>
         <a href="#gallery">Gallery</a>
         <a href="#faq">FAQ</a>
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" class="btn btn-small">Sign Up</a>
+        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-small">Sign Up</a>
       </nav>
     </div>
   </header>
+
+  <main>
 
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
     <div class="container hero-inner">
-      <img src="logo.png" alt="Innovate @ DIAB logo" class="hero-logo">
+      <img src="logo.png" alt="Innovate @ DIAB logo" class="hero-logo" width="520" height="469">
       <p class="tag">A Hack Club at Dubai International Academy Al Barsha</p>
-      <h1>We build <span class="typed" id="typed">apps</span><span class="cursor">|</span></h1>
+      <h1>We build <span class="typed-line"><span class="typed" id="typed">apps</span><span class="cursor" aria-hidden="true">|</span></span></h1>
       <p class="hero-text">
         DIAB Innovate is a club for students who love to make things.
         We code, design and ship real projects together, and win prizes from Hack Club along the way.
       </p>
       <div class="hero-buttons">
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" class="btn">Join the Club</a>
+        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn">Join the Club</a>
         <a href="#meetings" class="btn btn-outline">Next Meeting</a>
       </div>
     </div>
   </section>
 
   <!-- SCROLLING BANNER -->
-  <div class="marquee">
+  <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
       <span>HTML</span><span>✦</span><span>CSS</span><span>✦</span><span>JavaScript</span><span>✦</span>
       <span>Python</span><span>✦</span><span>Game Dev</span><span>✦</span><span>CAD</span><span>✦</span>
@@ -109,11 +121,11 @@
       <div class="board fade-in">
         <div class="note note-main">
           <span class="pin"></span>
-          <p class="note-label">📌 First Meeting</p>
+          <p class="note-label">📌 First Meeting <span class="note-badge" id="meetingBadge" data-date="2026-11-25"></span></p>
           <h3>Onboarding Meeting</h3>
           <p class="note-date">Wednesday, 25 November 2026</p>
           <p>Meet the team, find out how the club works, and pick your first project. Bring a laptop if you have one!</p>
-          <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" class="btn btn-small">Sign up to come</a>
+          <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-small">Sign up to come</a>
         </div>
         <div class="note note-soon">
           <span class="pin"></span>
@@ -176,14 +188,14 @@
       <h2 class="center">Our Co-Presidents</h2>
       <div class="team">
         <div class="member fade-in">
-          <img src="sai.jpg" alt="Saikrish Elangovan" class="avatar">
+          <img src="sai.jpg" alt="Saikrish Elangovan" class="avatar" width="160" height="160" loading="lazy">
           <h3>Saikrish Elangovan</h3>
           <p class="role">Co-President</p>
           <p class="bio">Saikrish is into coding, AI and building tech for the future. He has partnered with companies around the world on real projects, and was part of the winning team at Boeing's AI Hackathon.</p>
           <div class="chips"><span>Coding</span><span>AI</span><span>Global Partnerships</span></div>
         </div>
         <div class="member fade-in">
-          <img src="aditya.jpg" alt="Aditya Jain" class="avatar">
+          <img src="aditya.jpg" alt="Aditya Jain" class="avatar" width="160" height="160" loading="lazy">
           <h3>Aditya Jain</h3>
           <p class="role">Co-President</p>
           <p class="bio">Aditya loves coding, AI and building things that make a difference. He has won multiple inter-school competitions, and was part of the winning team at Boeing's AI Hackathon.</p>
@@ -255,7 +267,7 @@
       <h2>Ready to start building?</h2>
       <p>Sign up in less than a minute. We'd love to have you.</p>
       <div class="hero-buttons">
-        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" class="btn btn-white">📝 Sign Up Now</a>
+        <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener" class="btn btn-white">📝 Sign Up Now</a>
         <a href="mailto:diab210111@diabstudents.com" class="btn btn-ghost">📧 Email Us</a>
         <button class="btn btn-ghost" id="copyBtn">Copy email address</button>
       </div>
@@ -263,11 +275,13 @@
     </div>
   </section>
 
+</main>
+
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <p>© <span id="year"></span> DIAB Innovate · Dubai International Academy Al Barsha</p>
-      <a href="https://hackclub.com" target="_blank" class="footer-hc">
+      <a href="https://hackclub.com" target="_blank" rel="noopener" class="footer-hc">
         <img src="https://assets.hackclub.com/icon-rounded.svg" alt="Hack Club logo">
         Proud member of Hack Club
       </a>
@@ -275,11 +289,11 @@
   </footer>
 
   <!-- Back to top button -->
-  <a href="#home" class="to-top" id="toTop">↑</a>
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
 
   <!-- Little pop-up message -->
-  <div class="toast" id="toast">Email copied!</div>
+  <div class="toast" id="toast" role="status" aria-live="polite">Email copied!</div>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
