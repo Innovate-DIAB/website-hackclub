@@ -211,6 +211,9 @@ h2 { font-size: 2.2rem; margin-bottom: 1rem; }
 .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
 .footer-hc { display: flex; align-items: center; gap: 10px; color: var(--white); text-decoration: none; }
 .footer-hc img { width: 32px; }
+.footer-social { display: flex; gap: 14px; align-items: center; }
+.footer-social a { color: var(--white); opacity: .8; display: flex; transition: opacity .15s, transform .15s; }
+.footer-social a:hover, .footer-social a:focus-visible { opacity: 1; transform: translateY(-2px); }
 
 /* Back to top button */
 .to-top {
