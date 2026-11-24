@@ -578,3 +578,4 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
     .crew { grid-template-columns: 1fr; }
     .crew-photo { width: 80px; height: 80px; }
 }
+.brand { white-space: nowrap; }
