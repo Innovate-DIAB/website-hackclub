@@ -23,7 +23,7 @@ tab **Sign-ups**. Each row is one person, newest at the bottom.
   Its code is `Code.gs` in this folder. `SHEET_ID` in it points at the Sheet.
 - It's deployed as a **Web app** (Execute as: Me, Who has access: Anyone).
   The Web app URL is `SCRIPT_URL` at the top of `signup.js`.
-- Opening the Web app URL in a browser shows `"DIAB Innovate sign-ups are working."`
+- Opening the Web app URL in a browser shows `"Innovate @ DIAB sign-ups are working."`
 
 ## If you change Code.gs
 

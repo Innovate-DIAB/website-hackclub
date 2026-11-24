@@ -1,5 +1,5 @@
 /**
- * DIAB Innovate: external member sign-ups.
+ * Innovate @ DIAB: external member sign-ups.
  * Lives in the Apps Script project "DIAB Innovate Sign-ups" (script.google.com),
  * deployed as a Web app (Execute as: Me, Who has access: Anyone).
  * Every sign-up from signup.html becomes one new row in the "Sign-ups" tab.
@@ -60,7 +60,7 @@ function notify(p, interests) {
     to: Session.getEffectiveUser().getEmail(),
     subject: "New external sign-up: " + v(p.name),
     body: [
-      "Someone just signed up as an external member of DIAB Innovate.",
+      "Someone just signed up as an external member of Innovate @ DIAB.",
       "",
       "Name: " + v(p.name),
       "Email: " + v(p.email),
@@ -84,7 +84,7 @@ function notify(p, interests) {
 
 // Visiting the web app link in a browser just shows that it's working
 function doGet() {
-  return reply({ ok: true, message: "DIAB Innovate sign-ups are working." });
+  return reply({ ok: true, message: "Innovate @ DIAB sign-ups are working." });
 }
 
 function getSheet() {
