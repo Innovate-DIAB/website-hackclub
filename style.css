@@ -581,3 +581,19 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .brand { white-space: nowrap; }
 
 .photo { height: auto; }
+
+/* ===== Meeting photo collage: one large photo, five smaller ones ===== */
+.gallery.collage { gap: 10px; }
+.collage figure { position: relative; overflow: hidden; border-radius: var(--radius); }
+.collage .photo { display: block; height: 100%; }
+.collage figure:first-child { grid-column: span 2; grid-row: span 2; }
+.collage figure:first-child .photo { aspect-ratio: auto; position: absolute; inset: 0; }
+.collage figcaption { position: absolute; left: 10px; bottom: 10px; margin: 0; padding: 5px 12px;
+  border-radius: 999px; background: rgba(0, 0, 0, 0.6); color: #fff; font-size: 0.8rem; font-weight: 600; }
+@media (max-width: 760px) {
+  .gallery.collage { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .collage figure:first-child { grid-row: auto; }
+  .collage figure:first-child .photo { position: static; aspect-ratio: 4 / 3; }
+  .collage figure:last-child { grid-column: span 2; }
+  .collage figcaption { left: 6px; bottom: 6px; padding: 3px 8px; font-size: 0.68rem; }
+}
