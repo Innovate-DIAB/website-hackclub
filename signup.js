@@ -102,10 +102,15 @@ form.addEventListener("submit", async (e) => {
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
+    // The form no longer asks for parent details. The deployed Apps Script still
+    // rejects a blank parent_email until its new version is deployed, so send a note.
+    const body = new URLSearchParams(new FormData(form));
+    body.set("parent_email", "Not collected");
+
     try {
         const res = await fetch(SCRIPT_URL, {
             method: "POST",
-            body: new URLSearchParams(new FormData(form))
+            body: body
         });
         const data = await res.json();
         if (!data.ok) throw new Error(data.error || "Not saved");

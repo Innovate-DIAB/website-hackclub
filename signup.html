@@ -105,24 +105,6 @@
         </fieldset>
 
         <fieldset>
-          <legend>Parent or guardian</legend>
-          <div class="field">
-            <label for="parentName">Parent/guardian name</label>
-            <input id="parentName" name="parent_name" type="text" required>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="parentEmail">Parent/guardian email</label>
-              <input id="parentEmail" name="parent_email" type="email" required>
-            </div>
-            <div class="field">
-              <label for="parentPhone">Preferred phone number</label>
-              <input id="parentPhone" name="parent_phone" type="tel" placeholder="+971 50 123 4567" required>
-            </div>
-          </div>
-        </fieldset>
-
-        <fieldset>
           <legend>Where you are</legend>
           <div class="field-row">
             <div class="field">
@@ -143,11 +125,7 @@
           <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
         </div>
 
-        <label class="check consent">
-          <input type="checkbox" name="consent" value="Yes" required>
-          <span>My parent or guardian knows I'm signing up and agrees to be contacted by Innovate @ DIAB about club meetings and events.</span>
-        </label>
-        <p class="privacy">We only use these details to run the club and contact you and your parent or guardian about it. We never share them or sell them.</p>
+        <p class="privacy">We only use these details to run the club and contact you about it. We never share them or sell them.</p>
 
         <p class="error-text" id="formError" role="alert" hidden></p>
         <button type="submit" class="btn signup-submit" id="submitBtn">Sign Up</button>
@@ -177,6 +155,6 @@
     </div>
   </footer>
 
-  <script src="signup.js?v=3"></script>
+  <script src="signup.js?v=4"></script>
 </body>
 </html>

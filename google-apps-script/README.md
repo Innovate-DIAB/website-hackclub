@@ -14,7 +14,7 @@ tab **Sign-ups**. Each row is one person, newest at the bottom.
   To forward these to another inbox, set up a Gmail filter on that subject.
 - **Download it:** File > Download > Microsoft Excel (.xlsx) or CSV.
 - **Share it with another organiser:** Share button (top right), add their email.
-  Only people you share it with can see it. It holds students' and parents' contact
+  Only people you share it with can see it. It holds students' contact
   details, so keep it to organisers.
 
 ## How it's wired up

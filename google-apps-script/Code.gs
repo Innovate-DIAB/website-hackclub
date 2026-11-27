@@ -24,7 +24,7 @@ function doPost(e) {
     // Spam trap: real people never fill in this hidden box
     if (p.website) return reply({ ok: true });
 
-    if (!p.name || !p.email || !p.parent_email) {
+    if (!p.name || !p.email) {
       return reply({ ok: false, error: "Missing details" });
     }
 
@@ -69,10 +69,6 @@ function notify(p, interests) {
       "School: " + v(p.school),
       "Year / Grade: " + v(p.grade),
       "Interests: " + v(interests) + (p.interest_other ? " (also: " + v(p.interest_other) + ")" : ""),
-      "",
-      "Parent/guardian: " + v(p.parent_name),
-      "Parent email: " + v(p.parent_email),
-      "Parent phone: " + v(p.parent_phone),
       "",
       "Country: " + v(p.country),
       "Time zone: " + v(p.timezone),
