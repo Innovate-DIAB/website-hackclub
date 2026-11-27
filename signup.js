@@ -9,25 +9,13 @@ const formError = document.getElementById("formError");
 const interestsError = document.getElementById("interestsError");
 const done = document.getElementById("signupDone");
 
-// ===== MEETING TIME IN THE VISITOR'S OWN TIME ZONE =====
-// 4:00 PM in Dubai (GMT+4) on 27 Nov 2026 is 12:00 UTC.
-const meeting = new Date(Date.UTC(2026, 10, 27, 12, 0));
-const myZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
-if (myZone && myZone !== "Asia/Dubai" && myZone !== "Asia/Muscat") {
-    const local = meeting.toLocaleString(undefined, {
-        weekday: "long", day: "numeric", month: "long",
-        hour: "numeric", minute: "2-digit", timeZoneName: "short"
-    });
-    document.getElementById("localTime").textContent = "That's " + local + " where you are.";
-}
-
 // ===== TIME ZONE LIST, WITH YOUR DEVICE'S ZONE PICKED =====
 const tzSelect = document.getElementById("timezone");
 
 function offsetLabel(zone) {
     try {
         const part = new Intl.DateTimeFormat("en-GB", { timeZone: zone, timeZoneName: "shortOffset" })
-            .formatToParts(meeting)
+            .formatToParts(new Date())
             .find((p) => p.type === "timeZoneName");
         return part ? part.value : "";
     } catch {

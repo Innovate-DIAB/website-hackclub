@@ -459,7 +459,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible {
 }
 .signup-meeting p { margin-bottom: 6px; }
 .signup-meeting-title { font-size: 1.2rem; font-weight: 800; color: var(--dark); }
-.local-time { color: var(--muted); font-size: 0.9rem; }
 .signup-small { font-size: 0.9rem; color: var(--muted); }
 .signup-small a, .privacy a { color: var(--red); font-weight: 600; }
 
