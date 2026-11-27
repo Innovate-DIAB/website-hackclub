@@ -34,8 +34,8 @@ function doPost(e) {
       new Date(),
       clean(p.name), clean(p.email), clean(p.phone), clean(p.age), clean(p.school),
       clean(p.grade), clean(interests), clean(p.interest_other),
-      clean(p.parent_name), clean(p.parent_email), clean(p.parent_phone),
-      clean(p.country), clean(p.timezone), p.consent ? "Yes" : "No"
+      "", "", "", // old parent columns, no longer collected
+      clean(p.country), clean(p.timezone), "" // old consent column
     ]);
 
     // Email the club account about it. If the email fails, the sign-up is still saved.
