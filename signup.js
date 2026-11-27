@@ -11,6 +11,7 @@ const done = document.getElementById("signupDone");
 
 // ===== TIME ZONE LIST, WITH YOUR DEVICE'S ZONE PICKED =====
 const tzSelect = document.getElementById("timezone");
+const myZone = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
 
 function offsetLabel(zone) {
     try {
