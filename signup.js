@@ -1,7 +1,7 @@
 // ===== WHERE SIGN-UPS ARE SENT =====
 // This is the Google Apps Script web app that saves each sign-up as a row
 // in the club's Google Sheet. See google-apps-script/README.md.
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzcsWfopRj2zq0D1zkZY-B29iIn9y2PdtnCGRsO0ceVA3xaPLJe6bKsp47rjuJBdMEZ/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz666iXUGP_jEQ1z1PeDn1lQHclz9iD9TZH_1HsCQhdKF6B2kRn5EP7cbZI4qvD7b5k/exec";
 
 const form = document.getElementById("signupForm");
 const submitBtn = document.getElementById("submitBtn");
@@ -102,15 +102,10 @@ form.addEventListener("submit", async (e) => {
     submitBtn.disabled = true;
     submitBtn.textContent = "Sending...";
 
-    // The form no longer asks for parent details. The deployed Apps Script still
-    // rejects a blank parent_email until its new version is deployed, so send a note.
-    const body = new URLSearchParams(new FormData(form));
-    body.set("parent_email", "Not collected");
-
     try {
         const res = await fetch(SCRIPT_URL, {
             method: "POST",
-            body: body
+            body: new URLSearchParams(new FormData(form))
         });
         const data = await res.json();
         if (!data.ok) throw new Error(data.error || "Not saved");
