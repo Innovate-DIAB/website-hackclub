@@ -4,156 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>External Sign Up | Innovate @ DIAB</title>
+  <meta http-equiv="refresh" content="0; url=https://forms.cloud.microsoft/r/8mtcDznam5">
   <link rel="icon" href="logo.png">
-  <meta name="description" content="Not a DIAB student? Sign up to join Innovate @ DIAB, a Hack Club at Dubai International Academy Al Barsha, as an external member.">
-  <meta name="theme-color" content="#d4253f">
-  <meta property="og:title" content="Join Innovate @ DIAB as an external member">
-  <meta property="og:description" content="Students from any school can join our Hack Club online. Sign up in a few minutes.">
-  <meta property="og:image" content="https://innovatediab.dino.icu/logo.png">
   <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body class="signup-page">
-
-  <header class="nav scrolled">
-    <div class="container nav-inner signup-nav">
-      <a href="index.html" class="brand">Innovate <strong>@ DIAB</strong></a>
-      <a href="index.html" class="back-link">Back to the main site</a>
-    </div>
-  </header>
-
   <main class="section signup-main">
-    <div class="container signup-wrap">
-
-      <div class="signup-intro">
-        <p class="section-label">External Members</p>
-        <h1>Join Innovate @ DIAB from any school</h1>
-        <p>Not a student at Dubai International Academy Al Barsha? You can still join our Hack Club. External members meet online.</p>
-        <div class="signup-meeting">
-          <p class="note-label">One-time onboarding</p>
-          <p class="signup-meeting-title">External Members Onboarding</p>
-          <p><strong>Dates vary</strong></p>
-          <p>Online. You only attend once. We'll email you your date, time and joining link after you sign up.</p>
-        </div>
-        <p class="signup-small">At DIAB? Use the <a href="https://forms.cloud.microsoft/r/DDFd4ajd7E" target="_blank" rel="noopener">DIAB student sign-up form</a> instead.</p>
-      </div>
-
-      <form class="signup-form" id="signupForm" novalidate>
-
-        <fieldset>
-          <legend>About you</legend>
-          <div class="field">
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="email">Your email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
-              <span class="hint">We send the meeting link here.</span>
-            </div>
-            <div class="field">
-              <label for="phone">Contact number</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+971 50 123 4567" required>
-            </div>
-          </div>
-          <div class="field-row">
-            <div class="field">
-              <label for="age">Age</label>
-              <input id="age" name="age" type="number" min="8" max="19" inputmode="numeric" required>
-            </div>
-            <div class="field">
-              <label for="grade">Year / Grade</label>
-              <select id="grade" name="grade" required>
-                <option value="">Choose one</option>
-                <option>Year 5 / Grade 4</option>
-                <option>Year 6 / Grade 5</option>
-                <option>Year 7 / Grade 6</option>
-                <option>Year 8 / Grade 7</option>
-                <option>Year 9 / Grade 8</option>
-                <option>Year 10 / Grade 9</option>
-                <option>Year 11 / Grade 10</option>
-                <option>Year 12 / Grade 11</option>
-                <option>Year 13 / Grade 12</option>
-              </select>
-            </div>
-          </div>
-          <div class="field">
-            <label for="school">School</label>
-            <input id="school" name="school" type="text" autocomplete="organization" required>
-          </div>
-        </fieldset>
-
-        <fieldset>
-          <legend>What are you most interested in?</legend>
-          <p class="hint">Pick as many as you like.</p>
-          <div class="checks" id="interests">
-            <label class="check"><input type="checkbox" name="interests" value="CAD design"> CAD design</label>
-            <label class="check"><input type="checkbox" name="interests" value="Coding"> Coding</label>
-            <label class="check"><input type="checkbox" name="interests" value="Design"> Design</label>
-            <label class="check"><input type="checkbox" name="interests" value="AI"> AI</label>
-            <label class="check"><input type="checkbox" name="interests" value="Game development"> Game development</label>
-            <label class="check"><input type="checkbox" name="interests" value="Hackathons"> Hackathons</label>
-            <label class="check"><input type="checkbox" name="interests" value="Event opportunities"> Event opportunities</label>
-            <label class="check"><input type="checkbox" name="interests" value="Raffles and prizes"> Raffles and prizes</label>
-          </div>
-          <div class="field">
-            <label for="interestOther">Anything else? <span class="optional">(optional)</span></label>
-            <input id="interestOther" name="interest_other" type="text">
-          </div>
-          <p class="error-text" id="interestsError" hidden>Pick at least one.</p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Where you are</legend>
-          <div class="field-row">
-            <div class="field">
-              <label for="country">Country</label>
-              <input id="country" name="country" type="text" autocomplete="country-name" required>
-            </div>
-            <div class="field">
-              <label for="timezone">Time zone</label>
-              <select id="timezone" name="timezone" required></select>
-              <span class="hint">We filled this in from your device. Change it if it's wrong.</span>
-            </div>
-          </div>
-        </fieldset>
-
-        <!-- Spam trap: people never see this box, bots fill it in -->
-        <div class="trap" aria-hidden="true">
-          <label for="website">Leave this empty</label>
-          <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
-        </div>
-
-        <p class="privacy">We only use these details to run the club and contact you about it. We never share them or sell them.</p>
-
-        <p class="error-text" id="formError" role="alert" hidden></p>
-        <button type="submit" class="btn signup-submit" id="submitBtn">Sign Up</button>
-      </form>
-
-      <div class="signup-done" id="signupDone" hidden tabindex="-1">
-        <h2>You're signed up!</h2>
-        <p>Thanks for joining Innovate @ DIAB. We'll email the date, time and joining link for your one-time External Members Onboarding to the address you gave us.</p>
-        <a href="index.html" class="btn">Back to the main site</a>
-      </div>
-
+    <div class="container">
+      <h1>External sign-up has moved</h1>
+      <p><a href="https://forms.cloud.microsoft/r/8mtcDznam5">Open the external members sign-up form</a></p>
+      <p><a href="index.html">Back to the main site</a></p>
     </div>
   </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>Innovate @ DIAB · Dubai International Academy Al Barsha</p>
-      <div class="footer-social">
-        <a href="https://www.tiktok.com/@innovatediab" target="_blank" rel="noopener" aria-label="TikTok" title="TikTok"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M16.6 5.8A4.3 4.3 0 0 1 15.5 3h-3.1v12.4a2.6 2.6 0 1 1-2.6-2.6c.3 0 .5 0 .8.1V9.7a5.8 5.8 0 1 0 4.9 5.7V9a7.4 7.4 0 0 0 4.3 1.4V7.3a4.3 4.3 0 0 1-3.2-1.5z"/></svg></a>
-        <a href="https://www.instagram.com/innovateat_diab/" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></a>
-        <a href="https://www.youtube.com/@InnovateDIAB" target="_blank" rel="noopener" aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a>
-      </div>
-      <a href="https://hackclub.com" target="_blank" rel="noopener" class="footer-hc">
-        <img src="https://assets.hackclub.com/icon-rounded.svg" alt="Hack Club logo">
-        Proud member of Hack Club
-      </a>
-    </div>
-  </footer>
-
-  <script src="signup.js?v=7"></script>
+  <script>location.replace("https://forms.cloud.microsoft/r/8mtcDznam5");</script>
 </body>
 </html>
